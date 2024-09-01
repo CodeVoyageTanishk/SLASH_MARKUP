@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="password-generator">
+            <h1>Strong Password Generator</h1>
+            <div class="settings">
+                <label>
+                    Password Length:
+                    <input type="number" id="length" min="4" max="20" value="12">
+                </label>
+                <label>
+                    <input type="checkbox" id="includeUppercase" checked>
+                    Include Uppercase Letters
+                </label>
+                <label>
+                    <input type="checkbox" id="includeLowercase" checked>
+                    Include Lowercase Letters
+                </label>
+                <label>
+                    <input type="checkbox" id="includeNumbers" checked>
+                    Include Numbers
+                </label>
+                <label>
+                    <input type="checkbox" id="includeSymbols" checked>
+                    Include Symbols
+                </label>
+            </div>
+            <button id="generate">Generate Password</button>
+            <div class="generated-password">
+                <input type="text" id="password" readonly>
+                <button id="copy">Copy</button>
+            </div>
+            <p id="copyMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
